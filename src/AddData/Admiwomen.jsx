@@ -7,6 +7,9 @@ function Registration() {
   const [price, setprice] = useState('');
   const [description, setdescription] = useState('');
   const [image, setimage] = useState(''); // Image as a string (URL)
+  const [image1, setimage1] = useState(''); 
+  const [image2, setimage2] = useState('');
+  const [image3, setimage3] = useState('');
   const [category, setcategory] = useState('');
   const [message, setMessage] = useState('');
 
@@ -29,6 +32,9 @@ function Registration() {
           description,
           category,
           image,
+          image1,
+          image2,
+          image3,
         });
       
         if (response.status === 201) {
@@ -99,6 +105,39 @@ function Registration() {
             id="image"
             value={image}
             onChange={(e) => setimage(e.target.value)} // Use text input for image URL
+            required
+          />
+        </div>
+         <div className="from">
+          <label htmlFor="image" className="form-label">Image URL</label><br />
+          <input
+            type="text"
+            className="form-control"
+            id="image"
+            value={image1}
+            onChange={(e) => setimage1(e.target.value)} // Use text input for image URL
+            required
+          />
+        </div>
+         <div className="from">
+          <label htmlFor="image" className="form-label">Image URL</label><br />
+          <input
+            type="text"
+            className="form-control"
+            id="image"
+            value={image2}
+            onChange={(e) => setimage2(e.target.value)} // Use text input for image URL
+            required
+          />
+        </div>
+         <div className="from">
+          <label htmlFor="image" className="form-label">Image URL</label><br />
+          <input
+            type="text"
+            className="form-control"
+            id="image"
+            value={image3}
+            onChange={(e) => setimage3(e.target.value)} // Use text input for image URL
             required
           />
         </div>
