@@ -9,7 +9,7 @@ const MenProducts = () => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await fetch("https://ay-sell-back.onrender.com//api/kids");
+        const response = await fetch("https://ay-sell-back.onrender.com/api/kids");
 
         if (!response.ok) {
           throw new Error("Failed to fetch products");
