@@ -23,7 +23,7 @@ function Registration() {
     e.preventDefault();
 
     try {
-        const response = await axios.post('http://localhost:5000/api/women', {
+        const response = await axios.post('https://ay-sell-back.onrender.com/api/women', {
           title,
           price,
           description,
