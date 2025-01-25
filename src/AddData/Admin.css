@@ -1,0 +1,123 @@
+.login-form{
+    display: flex
+    ;
+        align-items: center;
+        flex-direction: column;
+}
+
+.continarer{
+    padding: 15px 28px 17px;
+    height: 736px;
+    margin-top: 19px;
+    background: white;
+}
+
+.from input{
+    height: 67px;
+    width: 389px;
+    margin-top: 22px;    
+    border: 2px solid rgb(166 158 219);
+
+    text-align: center;
+}
+
+.screen ul{
+list-style: none;
+display: flex;
+}
+
+.screen li a{
+    font-size: 27px;
+    margin-left: 101px;
+    text-decoration: none;
+    color: black;
+}
+.screen li {
+    font-size: 27px;
+    margin-left: 67px;
+    color: black;
+}
+
+.screen button{
+    height: 45px;
+    width: 98px;
+    border-radius: 34px;
+    border: 2px solid mediumpurple;
+    color: black;
+    background: white;
+}
+
+.xs{
+    display: none;
+}
+@media (max-width: 489px){
+    
+.continarer{
+    padding: 22px 36px 0px;
+        height: 736px;
+        margin-top: 96px;
+        width: 321px;
+        background: white;
+        margin-bottom: 45px;
+        margin-left: 7px;
+}
+.screen ul{
+    flex-direction: column;
+    display: none;
+}
+.screen li a{
+    margin-left: 0px;
+}
+.xs{
+   transform: translate3d(401px, 63px, 10px);
+   display: block;
+   font-size: 31px;
+}
+#sd{
+    
+    display: block;
+    list-style: none;
+    margin-top: 71px;
+    position: absolute;
+    background-color: lavenderblush;
+    padding: 0px 194px 45px;
+}
+#sd li a{
+    text-decoration: none;
+    color: #000;
+   
+}
+#sd li{
+margin-top: 34px;
+}
+#sd button{
+    height: 45px;
+    width: 98px;
+    border-radius: 34px;
+    border: 2px solid mediumpurple;
+    color: black;
+    background: white;
+    margin-left: -19px;
+}
+.container mt-41{
+    margin-top: 124px;
+}
+.from input {
+    height: 67px;
+    width: 340px;
+    margin-top: 22px;
+    border: 2px solid rgb(166 158 219);
+    text-align: center;
+}
+
+.form button {
+    height: 50px;
+    width: 341px;
+    margin-bottom: 30px;
+    margin-top: 23px;
+    border: 2px solid darkslateblue;
+    /* margin-left: 87px; */
+    background: lavender;
+    font-size: 29px;
+}
+}
