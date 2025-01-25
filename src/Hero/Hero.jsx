@@ -81,7 +81,7 @@ const Hero = () => {
 
   useEffect(() => {
     axios
-      .get('http://localhost:5000/api/product')
+      .get('https://ay-sell-back.onrender.com//api/product')
       .then((response) => setProducts(response.data))
       .catch((error) => console.error('Error fetching products', error));
   }, []);
