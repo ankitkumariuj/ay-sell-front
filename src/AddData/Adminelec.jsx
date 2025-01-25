@@ -27,7 +27,7 @@ function Registration() {
     e.preventDefault();
 
     try {
-        const response = await axios.post('http://localhost:5000/api/electronics', {
+        const response = await axios.post('https://ay-sell-back.onrender.com/api/electronics', {
           title,
           price,
           description,
