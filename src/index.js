@@ -9,8 +9,8 @@ import { Auth0Provider } from '@auth0/auth0-react';
 ReactDOM.render(
   <Router> {/* Wrap App with Router here */}
    <Auth0Provider
-    domain="dev-fb75osi8axa0p0zw.us.auth0.com"
-    clientId="pTyPLTC2IoLLtsGLhInflC1gjJBa7mOo"
+    domain="dev-i5kt3kcnezowhz7d.us.auth0.com"
+    clientId="UPdsla3fKehsl3N0hgPJzUcyGdPlWeyY"
     authorizationParams={{
       redirect_uri: window.location.origin
     }}
