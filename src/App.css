@@ -541,7 +541,8 @@ text-align: center;
     display: block;
   }
   .scanner{
-    padding: 9px;
+        padding: 0px;
+        width: 320px;
   }
   .timer{
     display: none;
