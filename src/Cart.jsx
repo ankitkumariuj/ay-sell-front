@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-
+import QRCode from "react-qr-code";
 import './App.css';
 
 const Cart = () => {
@@ -23,9 +23,11 @@ const Cart = () => {
   }, []);
 
   useEffect(() => {
-    const upiLink = `https://api.qrserver.com/v1/create-qr-code/?data=upi://pay?pa=nd6566482@oksbi&am=${totalPrice}&pn=CartPayment`;
+
+    const upiLink = `upi://pay?pa=nd6566482@oksbi&pn=Ankit%Yadav&am=${totalPrice}&cu=INR`;
     setQrCode(upiLink);
   }, [totalPrice]);
+
 
   useEffect(() => {
     let countdown;
@@ -131,10 +133,21 @@ const Cart = () => {
   const handleCheckout = () => {
     setShowCart(false);
   };
+
+  const cancel = ()=>{
+    setShowCart(true);
+  }
   const handleUPIClick = () => {
     const upiLink = `upi://pay?pa=nd6566482@oksbi&am=${totalPrice}&pn=CartPayment`;
     window.location.href = upiLink;
   };
+
+  const handlePhonePeClick = () => {
+    const upiLink = `upi://pay?pa=nd6566482@oksbi&pn=AY-Shop&am=${totalPrice}&tn=Payment%20to%20AY-Shop&cu=INR`;
+    window.location.href = upiLink;
+  };
+  
+
   const formatTime = (seconds) => {
     const minutes = Math.floor(seconds / 60);
     const remainingSeconds = seconds % 60;
@@ -196,6 +209,7 @@ const Cart = () => {
         <input type="text" placeholder="Enter Your Address" required />
         <input type="email" placeholder="Enter Your Email" required />
         <button type="submit">Proceed to Pay</button>
+        <button onClick={cancel} >Cancel</button>
       </form>
      )}
       {showScanner && (
@@ -208,7 +222,7 @@ const Cart = () => {
           </button>
           </div>
             <div className="timer">{formatTime(timer)}</div>
-          <img src={qrCode} alt="QR Code for Payment" id="qr"/>
+            <QRCode value={qrCode} size={256} />
          <h3> ₹{totalPrice.toFixed(2)}</h3>
         <div className="upi">
         <h3>AY-Shop</h3>
@@ -218,6 +232,9 @@ const Cart = () => {
       Pay with UPI App
       
     </button>
+    <button className="upi-button phonepe-button" onClick={handlePhonePeClick}>
+    Pay with PhonePe
+  </button>
     <div class="upiwc-payment-btn" data-type="gpay">
 										<div class="app-logo">
 											<img  src="data:image/png;base64,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" alt="google-pay-app-logo" class="logo"/>
