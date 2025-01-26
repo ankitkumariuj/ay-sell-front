@@ -10,9 +10,9 @@ const contact = () => {
       <div className="continaras">
       <div className="contact">
         <form action="">
-            <input type="email" name="" id="" placeholder='Enter Email' required/><br />
-            <input type="password" name="" id="" placeholder='Enter Password'  required/><br/>
-          <textarea name="" id=""  placeholder='Message'></textarea>
+            <input type="email" name="" id="" placeholder='Enter Your Name' required/><br />
+            <input type="password" name="" id="" placeholder='Enter Your Email'  required/><br/>
+          <textarea  placeholder='Message'></textarea>
           <button>Send</button>
 
         </form>
