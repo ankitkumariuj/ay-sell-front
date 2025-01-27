@@ -81,7 +81,7 @@ const Hero = () => {
 
   useEffect(() => {
     axios
-      .get('https://ay-sell-back.onrender.com/api/product')
+      .get('http://localhost:5000/api/product')
       .then((response) => setProducts(response.data))
       .catch((error) => console.error('Error fetching products', error));
   }, []);
@@ -122,7 +122,7 @@ const Hero = () => {
       </div>
 
       <div className="hero-image" id="slider" style={{ position: 'relative' }}>
-        <img src={images[currentIndex]} alt="Hero" style={{ width: '100%' }} />
+        <img src={images[currentIndex]} alt="Hero" style={{ width: '100%' ,height: '287px', marginTop: '80px'}} />
         <h1
           className="slider-arrow"
           style={{
