@@ -51,7 +51,7 @@ width: 218px;
     list-style: none;
 
 }
-@media (max-width: 998px){
+@media screen (max-width: 998px){
 .subscribe {
     display: flex
 ;
