@@ -27,7 +27,7 @@ function Registration() {
 
     const token = localStorage.getItem('adminToken');
     try {
-      const response = await axios.post('https://ay-sell-back.onrender.com/api/product', {
+      const response = await axios.post('http://localhost:5000/api/product', {
         title,
         price,
         description,
