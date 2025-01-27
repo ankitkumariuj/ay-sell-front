@@ -31,7 +31,8 @@ Your satisfaction is our priority. Happy shopping at AY-Shop! </p>
         <li onClick={scrolltop}><Link to="/kids">Kids</Link></li>
         <li onClick={scrolltop}><Link to="/electronics">Electronics</Link></li>
         <li onClick={scrolltop}><Link to="/contact">Contact</Link></li>
-        <li onclick={scrolltop}><Link to="/admin-login">ANkit</Link></li>
+        <li onClick={scrolltop}><Link to="/admin-login">ANkIt</Link></li>
+        
         </ul>
 </div>
 <div className="subscribe">
