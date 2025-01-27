@@ -12,7 +12,6 @@ import AdminLogin from './AddData/Adminlogin';
 import Adminelec from './AddData/Adminelec';
 import Hero from './Hero/Hero';
 import Login from './Login/Login';
-import Signup from './Singup/Signup'
 import ProtectedRoute from './ProtectedRoute';
 import Contact from './contact'
 import './App.css'
@@ -30,7 +29,6 @@ const ProductList = () => {
       <Routes>
         <Route path="/men" element={<Men />} />
         <Route path="/women" element={<Women />} />
-        <Route path='/signup' element={<Signup/>} />
         <Route path="/kids" element={<Kids />} />
         <Route path='/Electronics' element={< Electronics/>} />
         <Route path="/admin" element={<Admin />} />
