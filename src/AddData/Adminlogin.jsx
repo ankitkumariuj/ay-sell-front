@@ -14,7 +14,7 @@ function Login() {
     e.preventDefault();
 
     try {
-      const response = await axios.post('https://ay-sell-back.onrender.com/api/adminregister/login', { email, password });
+      const response = await axios.post('http://localhost:5000/api/adminregister/login', { email, password });
       localStorage.setItem('adminToken', response.data.token);
      
         // Store token in localStorage
@@ -56,7 +56,7 @@ function Login() {
             required
           />
         </div>
-        <button type="submit">Login</button>
+        <button type="submit" style={{marginLeft: '0px', width: '100%'}}>Login</button>
       </form>
 
       {successMessage && <p>{successMessage}</p>}
