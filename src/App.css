@@ -521,8 +521,8 @@ text-align: center;
     width: 214px;
   }
   .contact input,  .contact textarea{
-   
-    width: 365px;
+          width: 315px;
+        margin-left: 32px;
   }
 
 
