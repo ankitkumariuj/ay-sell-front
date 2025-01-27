@@ -13,11 +13,7 @@ const Login = () => {
       <div className="continar">
       <center><img src={logo} alt="" /></center> <hr />
       <center><h1 style={{color: 'darkslateblue'}}>Login</h1></center>
-      <div className="from">
-        <form action="">
-            <input type="email" name="" id="" placeholder='Enter Email' required/><br />
-            <input type="password" name="" id="" placeholder='Enter Password'  required/><br/>
-           <button className='log-btn'>Login</button><br />
+    
            {!isAuthenticated ? (
         <div className="auth-container">
           <button
@@ -51,11 +47,7 @@ const Login = () => {
         </div>
       )}
    
-           <div className='check'>
-           <input type="checkbox" name="" id="check" /> <span>Remebar me</span></div>
-            <p>Create Account <Link to='/signup'>Signup</Link></p>
-        </form>
-        </div>
+        
       </div>
       </div>
   
